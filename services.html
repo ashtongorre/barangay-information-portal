@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Services | Barangay Maligaya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-protected="true" data-page="services">
+    <div class="app">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="seal">BM</div>
+                <div><strong>Brgy. Maligaya</strong><small>Information Portal</small></div>
+            </div>
+            <nav class="nav"><a data-page="dashboard" href="dashboard.html">Overview</a><a data-page="announcements"
+                    href="announcements.html">Announcements</a><a data-page="services"
+                    href="services.html">Services</a><a data-page="officials" href="officials.html">Officials</a><a
+                    data-page="projects" href="projects.html">Projects</a><a data-page="contact"
+                    href="contact.html">Contact & Help</a></nav>
+            <div class="sidebar-footer">
+                <div class="user">
+                    <div class="avatar">A</div>
+                    <div><strong>Administrator</strong><small>Portal access</small></div>
+                </div><button class="btn" id="logoutBtn">Sign out</button>
+            </div>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="top-actions"><button class="menu-btn" id="menuBtn">Menu</button>
+                    <h1>Barangay Services</h1>
+                </div><span class="date-pill" id="today"></span>
+            </header>
+            <main class="content">
+                <div class="section-title">
+                    <h2>Public services</h2>
+                    <p>Review common requirements before visiting the barangay hall.</p>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card">
+                        <div class="icon">BC</div>
+                        <h3>Barangay Clearance</h3>
+                        <p>For employment, business, and other legal transactions.</p><button class="btn" data-demo>View
+                            requirements</button>
+                    </article>
+                    <article class="service-card">
+                        <div class="icon">CI</div>
+                        <h3>Certificate of Indigency</h3>
+                        <p>Supporting document for social welfare and assistance programs.</p><button class="btn"
+                            data-demo>View requirements</button>
+                    </article>
+                    <article class="service-card">
+                        <div class="icon">BR</div>
+                        <h3>Barangay Residency</h3>
+                        <p>Proof that a resident currently lives within the barangay.</p><button class="btn"
+                            data-demo>View requirements</button>
+                    </article>
+                    <article class="service-card">
+                        <div class="icon">BP</div>
+                        <h3>Business Permit Endorsement</h3>
+                        <p>Barangay-level clearance for local business registration.</p><button class="btn"
+                            data-demo>View requirements</button>
+                    </article>
+                    <article class="service-card">
+                        <div class="icon">BL</div>
+                        <h3>Blotter & Complaints</h3>
+                        <p>Record an incident or request barangay mediation.</p><button class="btn" data-demo>View
+                            process</button>
+                    </article>
+                    <article class="service-card">
+                        <div class="icon">ID</div>
+                        <h3>Barangay ID</h3>
+                        <p>Community identification for verified residents.</p><button class="btn" data-demo>View
+                            requirements</button>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="modal hidden" id="logoutModal">
+        <div class="modal-box">
+            <h3>Sign out of the portal?</h3>
+            <p class="muted">You will return to the login page.</p>
+            <div class="modal-actions"><button class="btn btn-secondary" id="cancelLogout">Cancel</button><button
+                    class="btn btn-primary" id="confirmLogout">Sign out</button></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Officials | Barangay Maligaya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-protected="true" data-page="officials">
+    <div class="app">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="seal">BM</div>
+                <div><strong>Brgy. Maligaya</strong><small>Information Portal</small></div>
+            </div>
+            <nav class="nav"><a data-page="dashboard" href="dashboard.html">Overview</a><a data-page="announcements"
+                    href="announcements.html">Announcements</a><a data-page="services"
+                    href="services.html">Services</a><a data-page="officials" href="officials.html">Officials</a><a
+                    data-page="projects" href="projects.html">Projects</a><a data-page="contact"
+                    href="contact.html">Contact & Help</a></nav>
+            <div class="sidebar-footer">
+                <div class="user">
+                    <div class="avatar">A</div>
+                    <div><strong>Administrator</strong><small>Portal access</small></div>
+                </div><button class="btn" id="logoutBtn">Sign out</button>
+            </div>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="top-actions"><button class="menu-btn" id="menuBtn">Menu</button>
+                    <h1>Barangay Officials</h1>
+                </div><span class="date-pill" id="today"></span>
+            </header>
+            <main class="content">
+                <div class="section-title">
+                    <h2>Community leadership</h2>
+                    <p>Meet the elected officials serving Barangay Maligaya.</p>
+                </div>
+                <div class="official-grid">
+                    <article class="official-card">
+                        <div class="avatar">MR</div>
+                        <h3>Maria L. Reyes</h3>
+                        <p>Punong Barangay</p><small>Office of the Barangay Chairperson</small>
+                    </article>
+                    <article class="official-card">
+                        <div class="avatar">JS</div>
+                        <h3>Jose P. Santos</h3>
+                        <p>Barangay Kagawad</p><small>Peace and Order Committee</small>
+                    </article>
+                    <article class="official-card">
+                        <div class="avatar">AC</div>
+                        <h3>Ana C. Cruz</h3>
+                        <p>Barangay Kagawad</p><small>Health and Sanitation Committee</small>
+                    </article>
+                    <article class="official-card">
+                        <div class="avatar">RT</div>
+                        <h3>Ramon D. Torres</h3>
+                        <p>Barangay Kagawad</p><small>Infrastructure Committee</small>
+                    </article>
+                    <article class="official-card">
+                        <div class="avatar">LM</div>
+                        <h3>Liza M. Mendoza</h3>
+                        <p>Barangay Secretary</p><small>Records and Administration</small>
+                    </article>
+                    <article class="official-card">
+                        <div class="avatar">CG</div>
+                        <h3>Carlo B. Garcia</h3>
+                        <p>SK Chairperson</p><small>Youth Development Council</small>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="modal hidden" id="logoutModal">
+        <div class="modal-box">
+            <h3>Sign out of the portal?</h3>
+            <p class="muted">You will return to the login page.</p>
+            <div class="modal-actions"><button class="btn btn-secondary" id="cancelLogout">Cancel</button><button
+                    class="btn btn-primary" id="confirmLogout">Sign out</button></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

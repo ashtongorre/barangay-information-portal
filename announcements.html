@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Announcements | Barangay Maligaya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-protected="true" data-page="announcements">
+    <div class="app">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="seal">BM</div>
+                <div><strong>Brgy. Maligaya</strong><small>Information Portal</small></div>
+            </div>
+            <nav class="nav"><a data-page="dashboard" href="dashboard.html">Overview</a><a data-page="announcements"
+                    href="announcements.html">Announcements</a><a data-page="services"
+                    href="services.html">Services</a><a data-page="officials" href="officials.html">Officials</a><a
+                    data-page="projects" href="projects.html">Projects</a><a data-page="contact"
+                    href="contact.html">Contact & Help</a></nav>
+            <div class="sidebar-footer">
+                <div class="user">
+                    <div class="avatar">A</div>
+                    <div><strong>Administrator</strong><small>Portal access</small></div>
+                </div><button class="btn" id="logoutBtn">Sign out</button>
+            </div>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="top-actions"><button class="menu-btn" id="menuBtn">Menu</button>
+                    <h1>Announcements</h1>
+                </div><span class="date-pill" id="today"></span>
+            </header>
+            <main class="content">
+                <div class="section-title">
+                    <h2>Community updates</h2>
+                    <p>Important notices, events, and public advisories.</p>
+                </div>
+                <div class="toolbar"><input class="input" id="searchInput" placeholder="Search announcements..."></div>
+                <article class="list-card" data-search="clean-up drive environment saturday">
+                    <div class="date-box"><strong>28</strong>SEP</div>
+                    <div>
+                        <h3>Scheduled community clean-up drive</h3>
+                        <p>Residents are invited to help clean shared spaces. Bring gloves and reusable water
+                            containers.</p>
+                    </div><span class="tag">Event</span>
+                </article>
+                <article class="list-card" data-search="water service interruption maintenance">
+                    <div class="date-box"><strong>24</strong>SEP</div>
+                    <div>
+                        <h3>Water service interruption</h3>
+                        <p>Service will be temporarily unavailable in Puroks 2, 3, and 4 from 9:00 AM to 2:00 PM.</p>
+                    </div><span class="tag orange">Advisory</span>
+                </article>
+                <article class="list-card" data-search="health screening medical center">
+                    <div class="date-box"><strong>02</strong>OCT</div>
+                    <div>
+                        <h3>Free basic health screening</h3>
+                        <p>Blood pressure, blood sugar, and basic consultation at the Barangay Health Center.</p>
+                    </div><span class="tag">Program</span>
+                </article>
+                <article class="list-card" data-search="scholarship youth application">
+                    <div class="date-box"><strong>10</strong>OCT</div>
+                    <div>
+                        <h3>Barangay education assistance applications</h3>
+                        <p>Qualified senior high school and college students may submit requirements at the barangay
+                            hall.</p>
+                    </div><span class="tag">Program</span>
+                </article>
+            </main>
+        </div>
+    </div>
+    <div class="modal hidden" id="logoutModal">
+        <div class="modal-box">
+            <h3>Sign out of the portal?</h3>
+            <p class="muted">You will return to the login page.</p>
+            <div class="modal-actions"><button class="btn btn-secondary" id="cancelLogout">Cancel</button><button
+                    class="btn btn-primary" id="confirmLogout">Sign out</button></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

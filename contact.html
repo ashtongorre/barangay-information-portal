@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact | Barangay Maligaya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-protected="true" data-page="contact">
+    <div class="app">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="seal">BM</div>
+                <div><strong>Brgy. Maligaya</strong><small>Information Portal</small></div>
+            </div>
+            <nav class="nav"><a data-page="dashboard" href="dashboard.html">Overview</a><a data-page="announcements"
+                    href="announcements.html">Announcements</a><a data-page="services"
+                    href="services.html">Services</a><a data-page="officials" href="officials.html">Officials</a><a
+                    data-page="projects" href="projects.html">Projects</a><a data-page="contact"
+                    href="contact.html">Contact & Help</a></nav>
+            <div class="sidebar-footer">
+                <div class="user">
+                    <div class="avatar">A</div>
+                    <div><strong>Administrator</strong><small>Portal access</small></div>
+                </div><button class="btn" id="logoutBtn">Sign out</button>
+            </div>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="top-actions"><button class="menu-btn" id="menuBtn">Menu</button>
+                    <h1>Contact & Help</h1>
+                </div><span class="date-pill" id="today"></span>
+            </header>
+            <main class="content">
+                <div class="section-title">
+                    <h2>Get in touch</h2>
+                    <p>Reach the barangay office or send a non-emergency concern.</p>
+                </div>
+                <div class="contact-layout">
+                    <article class="card">
+                        <h3>Barangay Hall</h3>
+                        <div class="contact-row"><strong>Office address</strong><span>123 Maligaya Road, Purok 1,
+                                Barangay Maligaya</span></div>
+                        <div class="contact-row"><strong>Contact number</strong><span>(02) 8123 4567 / 0917 123
+                                4567</span></div>
+                        <div class="contact-row"><strong>Email
+                                address</strong><span>barangay.maligaya@example.com</span></div>
+                        <div class="contact-row"><strong>Office hours</strong><span>Monday–Friday, 8:00 AM–5:00
+                                PM</span></div>
+                        <div class="contact-row"><strong>Emergency desk</strong><span>Available 24/7 through the
+                                barangay hotline</span></div>
+                    </article>
+                    <article class="card">
+                        <h3>Send a concern</h3>
+                        <p class="notice hidden" id="formNotice">Your message was recorded in this demo. A backend is
+                            needed to send it to the barangay office.</p>
+                        <form id="contactForm">
+                            <div class="field"><label for="name">Full name</label><input class="input" id="name"
+                                    required placeholder="Juan Dela Cruz"></div>
+                            <div class="field"><label for="subject">Subject</label><select class="input" id="subject"
+                                    required>
+                                    <option value="">Select a concern</option>
+                                    <option>Document inquiry</option>
+                                    <option>Community concern</option>
+                                    <option>Project feedback</option>
+                                    <option>Other</option>
+                                </select></div>
+                            <div class="field"><label for="message">Message</label><textarea class="input" id="message"
+                                    required placeholder="Write your message here..."></textarea></div><button
+                                class="btn btn-primary" type="submit">Submit message</button>
+                        </form>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="modal hidden" id="logoutModal">
+        <div class="modal-box">
+            <h3>Sign out of the portal?</h3>
+            <p class="muted">You will return to the login page.</p>
+            <div class="modal-actions"><button class="btn btn-secondary" id="cancelLogout">Cancel</button><button
+                    class="btn btn-primary" id="confirmLogout">Sign out</button></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

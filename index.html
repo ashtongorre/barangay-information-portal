@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Barangay Maligaya information portal demo">
+    <title>Login | Barangay Maligaya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="login-page">
+        <section class="login-brand">
+            <div class="seal">BM</div>
+            <h1>Barangay Maligaya Portal</h1>
+            <p>One organized place for community announcements, public services, officials, programs, and local contact
+                information.</p>
+        </section>
+        <section class="login-panel">
+            <div class="login-card"><span class="eyebrow">Community access</span>
+                <h2>Welcome back</h2>
+                <p class="muted">Sign in to continue to the information portal.</p>
+                <form id="loginForm">
+                    <div class="field"><label for="username">Username</label><input class="input" id="username"
+                            autocomplete="username" required placeholder="Enter your username"></div>
+                    <div class="field"><label for="password">Password</label>
+                        <div class="password-wrap"><input class="input" id="password" type="password"
+                                autocomplete="current-password" required placeholder="Enter your password"><button
+                                class="text-btn" type="button" id="togglePassword">Show</button></div>
+                    </div><button class="btn btn-primary btn-full" type="submit">Sign in to portal</button>
+                    <div class="error" id="loginError" aria-live="polite"></div>
+                </form>
+                <div class="login-hint"><strong>Demo account</strong><br>Username: admin &nbsp;•&nbsp; Password:
+                    barangay123</div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard | Barangay Maligaya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-protected="true" data-page="dashboard">
+    <div class="app">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="seal">BM</div>
+                <div><strong>Brgy. Maligaya</strong><small>Information Portal</small></div>
+            </div>
+            <nav class="nav"><a data-page="dashboard" href="dashboard.html">Overview</a><a data-page="announcements"
+                    href="announcements.html">Announcements</a><a data-page="services"
+                    href="services.html">Services</a><a data-page="officials" href="officials.html">Officials</a><a
+                    data-page="projects" href="projects.html">Projects</a><a data-page="contact"
+                    href="contact.html">Contact & Help</a></nav>
+            <div class="sidebar-footer">
+                <div class="user">
+                    <div class="avatar">A</div>
+                    <div><strong>Administrator</strong><small>Portal access</small></div>
+                </div><button class="btn" id="logoutBtn">Sign out</button>
+            </div>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="top-actions"><button class="menu-btn" id="menuBtn">Menu</button>
+                    <h1>Community Overview</h1>
+                </div><span class="date-pill" id="today"></span>
+            </header>
+            <main class="content">
+                <div class="welcome">
+                    <div>
+                        <h2>Good day, Barangay Maligaya!</h2>
+                        <p>Here is a quick view of community information and activity.</p>
+                    </div><a class="btn btn-primary" href="announcements.html">View updates</a>
+                </div>
+                <section class="stats">
+                    <article class="stat">
+                        <div class="stat-label">REGISTERED RESIDENTS</div>
+                        <div class="stat-value">8,420</div><small>Across 7 puroks</small>
+                    </article>
+                    <article class="stat">
+                        <div class="stat-label">ACTIVE HOUSEHOLDS</div>
+                        <div class="stat-value">2,138</div><small>Updated this quarter</small>
+                    </article>
+                    <article class="stat">
+                        <div class="stat-label">ONGOING PROJECTS</div>
+                        <div class="stat-value">6</div><small>3 nearing completion</small>
+                    </article>
+                    <article class="stat">
+                        <div class="stat-label">AVAILABLE SERVICES</div>
+                        <div class="stat-value">9</div><small>Weekday processing</small>
+                    </article>
+                </section>
+                <section class="grid-2">
+                    <article class="card">
+                        <div class="card-head">
+                            <h3>Latest announcements</h3><a class="link" href="announcements.html">See all</a>
+                        </div>
+                        <div class="announcement"><span class="tag">Advisory</span>
+                            <h4>Scheduled community clean-up drive</h4>
+                            <p>Saturday, 7:00 AM — assembly at the barangay covered court.</p>
+                        </div>
+                        <div class="announcement"><span class="tag orange">Notice</span>
+                            <h4>Water service interruption</h4>
+                            <p>Temporary interruption on September 24 from 9:00 AM to 2:00 PM.</p>
+                        </div>
+                        <div class="announcement"><span class="tag">Program</span>
+                            <h4>Free basic health screening</h4>
+                            <p>Registration is open for residents aged 18 and above.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-head">
+                            <h3>Quick links</h3>
+                        </div>
+                        <div class="quick-grid"><a class="quick" href="services.html">Request document<span>View
+                                    requirements</span></a><a class="quick" href="officials.html">Find an
+                                official<span>Directory and roles</span></a><a class="quick" href="projects.html">Track
+                                projects<span>See progress</span></a><a class="quick" href="contact.html">Report a
+                                concern<span>Send a message</span></a></div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+    <div class="modal hidden" id="logoutModal">
+        <div class="modal-box">
+            <h3>Sign out of the portal?</h3>
+            <p class="muted">You will return to the login page.</p>
+            <div class="modal-actions"><button class="btn btn-secondary" id="cancelLogout">Cancel</button><button
+                    class="btn btn-primary" id="confirmLogout">Sign out</button></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
